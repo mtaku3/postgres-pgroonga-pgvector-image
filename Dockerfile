@@ -1,7 +1,7 @@
 # PostgreSQL with PGroonga for multilingual full-text search and pgvector for
 # vector similarity search. The versions match Hindsight's upstream PGroonga
 # deployment recipe, but the resulting image is application-independent.
-FROM groonga/pgroonga:4.0.8-debian-17@sha256:15ab42f1b92749950da640b6d88f5563498a2ac06b2d0aaee1f9185afe34e376
+FROM groonga/pgroonga:4.1.0-debian-17@sha256:81ba507e55904b1d847c332353cbb2a8aba88ac5e1e464cb314ee7c5381ba7f0
 
 # renovate: datasource=deb depName=postgresql-17-pgvector registryUrl=https://apt.postgresql.org/pub/repos/apt?suite=trixie-pgdg&components=main&binaryArch=amd64
 ARG PGVECTOR_VERSION=0.8.6-1.pgdg13+1
